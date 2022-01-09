@@ -2,7 +2,7 @@
 Welcome to BlackJack!
 
 This game is fully functional, with a casino sound package integrated using Pygame, dynamic game logic developed using Object Oriented Programming (OOP),
-and an interactive GUI developed using Tkinter. The game itself is a one player game, where the player plays against the dealer.
+and an interactive GUI developed using Tkinter. The game itself is a one player game developed in Python, where the player plays against the dealer.
 
 Note that the file: BlackJackCommandLine.py in the project folder is the command line interface version of BlackJack. This was the initial script that I developed, intended to be a game fully based on a command line interface. I then decided to integrate a graphical user interface to that script, creating the fully functional GUI version. Feel free to play either version!
 
