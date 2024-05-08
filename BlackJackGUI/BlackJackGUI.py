@@ -267,7 +267,7 @@ for (card,filepath) in imgtuple:
     img = (Image.open(filepath))
 
 
-    resized_image = img.resize((74, 107), Image.ANTIALIAS)
+    resized_image = img.resize((74, 107), Image.Resampling.LANCZOS)
     new_image = ImageTk.PhotoImage(resized_image)
 
     imglist.append((card,new_image))
@@ -287,7 +287,7 @@ mainWindow.columnconfigure(4, weight=5)
 mainWindow.columnconfigure(5, weight=0)
 logoimg = (Image.open("logo.png"))
 
-resized_img = logoimg.resize((300, 300), Image.ANTIALIAS)
+resized_img = logoimg.resize((300, 300), Image.Resampling.LANCZOS)
 logo_image = ImageTk.PhotoImage(resized_img)
 
 game_screen = tkinter.Canvas(mainWindow, borderwidth=0, highlightthickness=0, bg="darkgreen", width=400, height=400)
